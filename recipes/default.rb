@@ -31,3 +31,10 @@ cookbook_file '/home/vagrant/.bashrc' do
   mode '0755'
   action :create
 end
+
+directory '/home/vagrant/.vim' do
+  owner 'vagrant'
+  group 'vagrant'
+  recursive true
+  action :create
+end
